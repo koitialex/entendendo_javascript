@@ -17,13 +17,18 @@ nota3 = prompt("coloque a treceira nota");
 nota3 = parseFloat(nota3);
 
 let media = 0
+let mensagem = " "
 
 media = (nota1+nota2+nota3)/3;
 
-if (media > 6){alert("está aprovado")
-}else if (media < 4) {alert("está reprovado") 
-}else if (media = 5)alert("está em recuperação")
+if (media > 6){ 
+    mensagem = nome + " está aprovado"
+}else if (media < 4) {
+    mensagem = nome + " está reprovado" 
+}else 
+    mensagem = nome + " está em recuperação";
 
+alert(mensagem);
 
 
 //let mensagem = "Parabéns " + nome + " tirou a média de " + media;
