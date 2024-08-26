@@ -6,5 +6,5 @@ horas = parseFloat(prompt (" Quantas horas trabalhadas por semana ?"));
 
 renda = salario * horas;
 
-mensagem = nome + " ganha " + renda; 
+mensagem = nome + " ganha " + renda.to; 
 alert (mensagem)
