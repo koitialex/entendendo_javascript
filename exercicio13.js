@@ -1,14 +1,14 @@
-let nome = " ";
-let senha = " ";
+let nome, senha = " ";
+let mensagem = " ";
+do {
+    nome = prompt("Qual é o seu nome");
+    senha = prompt(" Insira a sua senha");
 
-while (senha == nome ){
+    if (nome === senha) {
+        mensagem = (" erro, não é permitido ter a senha e o nome iguais");
+    }
 
-mensagem = "erro";
-nome = prompt ("Qual é o seu nome ?");
-senha = parseFloat(prompt ("insira a senha"));
-    
-}
-alert (mensagem)
- 
+} while (nome === senha);
+mensagem = `Bem vindo ${nome}`;
 
-   
+alert(mensagem);
