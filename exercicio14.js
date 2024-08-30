@@ -1,11 +1,24 @@
-let num = 0
-let tabuada = ""
-let mensagem = ""
-let pergunta = "" 
+let num = 0;
+let mensagem = "";
+let pergunta = ""
+let continuar = "s"; 
+let vazio = ""
 
 do {
-    num = prompt("digite um número para fazer a tabuada dela")
-    mensagem += num <= 10 + `/n` + num++
-    mensagem = `${num} x ` 
-    pergunta =  prompt("Deseja fazer uma outra tabuada ? sim`/n`Não `/n`")  
-} while (sim);
+    num = parseInt(prompt("digite um número para fazer a tabuada dela"));
+    let tabuada = "";
+    for (let i = 0; i <= 10 ; i++) {
+        tabuada += `${num} x ${i} = ${num * i}\n `; 
+    }
+    alert(tabuada)
+     
+    continuar = prompt("Deseja fazer uma outra tabuada ? \n Digite s=sim ou n=não"); 
+
+    if (continuar == "s"){
+        alert ("ok")
+    }
+    else if (continuar == " "){
+        alert (continuar)
+    }
+} while (continuar == `s`);
+alert ("fim")
