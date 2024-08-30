@@ -1,12 +1,11 @@
 let num = 0
-let tabuada = " "
- 
+let tabuada = ""
+let mensagem = ""
+let pergunta = "" 
+
 do {
-num = parseFloat(prompt("Digite um número qualquer para fazer a tabuada dela"))
- 
-tabuada += num * " \n"
-num*(num++)  
- 
-}
-while (num <= 10)
-    alert ( `${tabuada} Deseja fazer novamente ? `)
+    num = prompt("digite um número para fazer a tabuada dela")
+    mensagem += num <= 10 + `/n` + num++
+    mensagem = `${num} x ` 
+    pergunta =  prompt("Deseja fazer uma outra tabuada ? sim`/n`Não `/n`")  
+} while (sim);
